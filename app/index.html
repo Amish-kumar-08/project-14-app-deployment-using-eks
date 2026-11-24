@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 14 | Amazon EKS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+
+        .status {
+            background: #14532d;
+            color: #86efac;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 6vw, 48px);
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #aab8cc;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: #26364b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #34465d;
+        }
+
+        .card p {
+            color: #93c5fd;
+            font-size: 12px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .card h2 {
+            font-size: 25px;
+        }
+
+        .success {
+            margin-top: 25px;
+            background: #174b37;
+            padding: 22px;
+            border-radius: 12px;
+            color: #bbf7d0;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #8493a8;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        @media(max-width: 550px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="header">
+            <div class="logo">☁ CloudDeploy</div>
+            <div class="status">● APPLICATION LIVE</div>
+        </header>
+
+        <h1>Amazon EKS Deployment</h1>
+
+        <p class="subtitle">
+            Successfully deployed and running on
+            Amazon Elastic Kubernetes Service.
+            This application is powered by Kubernetes
+            and Nginx containers.
+        </p>
+
+        <section class="cards">
+            <div class="card">
+                <p>KUBERNETES CLUSTER</p>
+                <h2>p14-eks</h2>
+            </div>
+
+            <div class="card">
+                <p>APPLICATION REPLICAS</p>
+                <h2>2 / 2</h2>
+            </div>
+
+            <div class="card">
+                <p>CONTAINER TECHNOLOGY</p>
+                <h2>Nginx</h2>
+            </div>
+
+            <div class="card">
+                <p>CLOUD PLATFORM</p>
+                <h2>AWS EKS</h2>
+            </div>
+        </section>
+
+        <div class="success">
+            <strong>✓ Deployment Successful!</strong>
+            <p style="margin-top: 8px;">
+                Your application is accessible through
+                an AWS Elastic Load Balancer.
+            </p>
+        </div>
+
+        <footer>
+            Project 14 | App Deployment using Amazon EKS
+        </footer>
+
+    </main>
+</body>
+</html>
+

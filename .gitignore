@@ -1,0 +1,46 @@
+
+# AWS credentials and secrets
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!example.tfvars
+
+# Kubernetes temporary files
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node dependencies
+node_modules/
+
+# Temporary archives and installers
+*.tar.gz
+

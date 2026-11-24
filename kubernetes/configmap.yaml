@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+  namespace: project-14
+data:
+  index.html: |
+    REPLACE_WITH_HTML_FILE_CONTENT
